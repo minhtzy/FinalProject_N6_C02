@@ -22,9 +22,10 @@ void DangNhapSence::show()
 	switch (iChoice)
 	{
 	case 1:
-		
+		doNguoiDungDangNhap();
 		break;
 	case 2:
+		doQuanTriDangNhap();
 		break;
 	default:
 		break;
