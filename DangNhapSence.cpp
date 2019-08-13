@@ -57,13 +57,24 @@ void DangNhapSence::doNguoiDungDangNhap()
 void DangNhapSence::doQuanTriDangNhap()
 {
 	string username, password;
-	cout << "Nhap ten nguoi dung: ";
-	cin >> username;
-	cout << "Nhap mat khau: ";
-	cin >> password;
+	do
+	{
+		cout << "Nhap ten nguoi dung: ";
+		cin >> username;
+		cout << "Nhap mat khau: ";
+		cin >> password;
 
-	MenuQuanTri menu;
-	menu.show();
+		// TODO: check login
+		if (true)
+		{
+			MenuQuanTri menu;
+			menu.show();
+			return;
+		}
+	} while (IsUserContinue("Ten nguoi dung hoac mat khau sai. Nhap lai?"));
+
+
+
 
 }
 
