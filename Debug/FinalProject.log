@@ -1,13 +1,2 @@
-﻿  ChuyenTienScene.cpp
-  DangNhapScene.cpp
-  GuiTienScene.cpp
-  KhieuNai.cpp
-  Main.cpp
-  MenuNguoiDung.cpp
-  MenuQuanTri.cpp
-  NguoiDungScene.cpp
-  RutTienScene.cpp
-  Scene.cpp
-  TaoNguoiDungScene.cpp
-  Generating Code...
+﻿  SaoKeNguoiDungScene.cpp
   FinalProject.vcxproj -> C:\Users\minht\Desktop\Trainee\Exercise\FinalProject\Debug\FinalProject.exe

@@ -1,7 +1,6 @@
 #include "NguoiDungIO.h"
 #include <fstream>
-
-#define NGUOI_DUNG_DB_PATH "Users.dat"
+#include "Definations.h"
 
 using namespace std;
 
@@ -12,7 +11,7 @@ NguoiDungIO::NguoiDungIO()
 NguoiDung * NguoiDungIO::getNguoiDung(std::string soTaiKhoan)
 {
 	ifstream iFile;
-	iFile.open(NGUOI_DUNG_DB_PATH, ios::in | ios::binary);
+	iFile.open(NGUOI_DUNG_FILE_PATH, ios::in | ios::binary);
 
 	NguoiDung * temp= new NguoiDung;
 	iFile.read((char *)(temp), sizeof(NguoiDung));
@@ -35,7 +34,7 @@ NguoiDung * NguoiDungIO::getNguoiDung(std::string soTaiKhoan)
 bool NguoiDungIO::addNguoiDung(NguoiDung * thongTin)
 {
 	ofstream oFile;
-	oFile.open(NGUOI_DUNG_DB_PATH,ios::out | ios::binary | ios::app);
+	oFile.open(NGUOI_DUNG_FILE_PATH,ios::out | ios::binary | ios::app);
 	oFile.seekp(0,oFile.end);
 	oFile.write((char *)thongTin, sizeof(NguoiDung));
 	return true;
@@ -44,7 +43,7 @@ bool NguoiDungIO::addNguoiDung(NguoiDung * thongTin)
 bool NguoiDungIO::updateNguoiDung(NguoiDung * thongTin)
 {
 	fstream file;
-	file.open(NGUOI_DUNG_DB_PATH, ios::in | ios::out | ios::binary);
+	file.open(NGUOI_DUNG_FILE_PATH, ios::in | ios::out | ios::binary);
 	streampos posg = file.beg;
 	NguoiDung * temp = new NguoiDung();
 	file.read((char *)temp, sizeof(NguoiDung));
@@ -73,7 +72,7 @@ bool NguoiDungIO::deleteNguoiDung(std::string soTaiKhoan)
 bool NguoiDungIO::checkLogin(std::string soTaiKhoan, std::string matKhau)
 {
 	ifstream iFile;
-	iFile.open(NGUOI_DUNG_DB_PATH, ios::in | ios::binary);
+	iFile.open(NGUOI_DUNG_FILE_PATH, ios::in | ios::binary);
 
 	NguoiDung * temp = new NguoiDung;
 	iFile.read((char *)(temp), sizeof(NguoiDung));

@@ -33,7 +33,7 @@ void MenuQuanTri::show()
 		default:
 			break;
 		}
-	} while (IsUserContinue());
+	} while (IsUserContinue("Tiep tuc thuc hien chuc nang khac?"));
 
 }
 

@@ -8,6 +8,7 @@ public:
 	GuiTienScene(NguoiDung * user);
 	void show() override;
 	bool GuiTien(double amount, double fee);
+	void LogGuiTien(double amount, double fee);
 	~GuiTienScene();
 
 private:

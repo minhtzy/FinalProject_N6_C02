@@ -5,11 +5,11 @@
 #include"NguoiDung.h"
 using namespace std;
 
-class KhieuNai : public NguoiDungScene {
+class KhieuNaiScene : public NguoiDungScene {
 public:
-	KhieuNai();
-	KhieuNai(NguoiDung* user);
+	KhieuNaiScene();
+	KhieuNaiScene(NguoiDung* user);
 	void show() override;
 	void GuiKhieuNai();
-	~KhieuNai();
+	~KhieuNaiScene();
 };

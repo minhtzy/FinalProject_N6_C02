@@ -8,6 +8,7 @@ public:
 	RutTienScene(NguoiDung * user);
 	void show() override;
 	bool RutTien(double amount);
+	void LogRutTien(double amount);
 	~RutTienScene();
 
 private:

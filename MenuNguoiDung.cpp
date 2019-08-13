@@ -4,6 +4,9 @@
 #include "RutTienScene.h"
 #include "ChuyenTienScene.h"
 #include "GuiTienScene.h"
+#include "KhieuNaiScene.h"
+#include "XemThongBaoScene.h"
+#include "SaoKeNguoiDungScene.h"
 
 using namespace std;
 
@@ -19,7 +22,6 @@ void MenuNguoiDung::show()
 {
 	do
 	{
-
 		cout << "MENU" << endl;
 		cout << "\t1. Rut tien." << endl;
 		cout << "\t2. Gui tien vao tai khoan." << endl;
@@ -28,34 +30,47 @@ void MenuNguoiDung::show()
 		cout << "\t5. Gui khieu nai." << endl;
 		cout << "\t6. Xem thong bao." << endl;
 		int iChoice;
-		InputChoice(iChoice, 1, 4);
+		InputChoice(iChoice, 1, 6);
+		Scene * scene = nullptr;
 		switch (iChoice)
 		{
 		case 1:
 		{
-			RutTienScene rutTienScene(user);
-			rutTienScene.show();
+			scene = new RutTienScene(user);
 			break;
 		}
 		case 2:
 		{
-			GuiTienScene guiTienScene(user);
-			guiTienScene.show();
+			scene = new GuiTienScene(user);
 			break;
 		}
 		case 3:
 		{
+			scene = new ChuyenTienScene(user);
 			break;
 		}
 		case 4:
 		{
+			scene = new SaoKeNguoiDungScene(user);
 			break;
 		}
+		case 5:
+		{
+			scene = new KhieuNaiScene(user);
+			break;
+		}
+		case 6:
+		{
+			scene = new XemThongBaoScene(user);
+			break;
+		}
+		
 		default:
 			break;
 		}
-		cout << "Ban co muon thuc hien chuc nang khac? ";
-	} while (IsUserContinue());
+		if(scene) scene->show();
+		delete scene;
+	} while (IsUserContinue("Ban co muon thuc hien chuc nang khac?"));
 }
 
 MenuNguoiDung::~MenuNguoiDung()

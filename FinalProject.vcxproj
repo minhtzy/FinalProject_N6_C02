@@ -119,9 +119,11 @@
     <ClInclude Include="ChuyenTienScene.h" />
     <ClInclude Include="DangNhapScene.h" />
     <ClInclude Include="Date.h" />
+    <ClInclude Include="Definations.h" />
     <ClInclude Include="DoiTien.h" />
+    <ClInclude Include="FileLoger.h" />
     <ClInclude Include="GuiTienScene.h" />
-    <ClInclude Include="KhieuNai.h" />
+    <ClInclude Include="KhieuNaiScene.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="MenuNguoiDung.h" />
     <ClInclude Include="MenuQuanTri.h" />
@@ -133,18 +135,21 @@
     <ClInclude Include="PhiChuyenTien.h" />
     <ClInclude Include="QuanTri.h" />
     <ClInclude Include="RutTienScene.h" />
+    <ClInclude Include="SaoKeNguoiDungScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="TaoNguoiDungScene.h" />
     <ClInclude Include="Tien.h" />
     <ClInclude Include="TimeUtils.h" />
+    <ClInclude Include="XemThongBaoScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChuyenTienScene.cpp" />
     <ClCompile Include="DangNhapScene.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="DoiTien.cpp" />
+    <ClCompile Include="FileLoger.cpp" />
     <ClCompile Include="GuiTienScene.cpp" />
-    <ClCompile Include="KhieuNai.cpp" />
+    <ClCompile Include="KhieuNaiScene.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MenuNguoiDung.cpp" />
     <ClCompile Include="MenuQuanTri.cpp" />
@@ -155,10 +160,12 @@
     <ClCompile Include="NguoiDungScene.cpp" />
     <ClCompile Include="PhiChuyenTien.cpp" />
     <ClCompile Include="RutTienScene.cpp" />
+    <ClCompile Include="SaoKeNguoiDungScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="TaoNguoiDungScene.cpp" />
     <ClCompile Include="Tien.cpp" />
     <ClCompile Include="TimeUtils.cpp" />
+    <ClCompile Include="XemThongBaoScene.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

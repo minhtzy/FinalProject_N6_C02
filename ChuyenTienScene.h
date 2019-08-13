@@ -9,9 +9,7 @@ class ChuyenTienScene: public NguoiDungScene, public NganHang {
 		ChuyenTienScene();
 		ChuyenTienScene(NguoiDung * user);
 		void show() override;
-		bool ChuyenTien(NguoiDung * user1, double amount);
+		bool ChuyenTien(NguoiDung * user1, double amount, double fee);
+		void LogChuyenTien(NguoiDung * user1,double amount, double fee);
 		~ChuyenTienScene();
-
-
-
 };

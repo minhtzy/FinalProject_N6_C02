@@ -51,9 +51,6 @@
     <ClInclude Include="MenuQuanTri.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KhieuNai.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PhiChuyenTien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -76,6 +73,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Definations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KhieuNaiScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaoKeNguoiDungScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XemThongBaoScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -113,9 +125,6 @@
     <ClCompile Include="MenuQuanTri.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="KhieuNai.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PhiChuyenTien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -138,6 +147,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KhieuNaiScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaoKeNguoiDungScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XemThongBaoScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
