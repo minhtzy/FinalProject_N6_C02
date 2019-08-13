@@ -5,6 +5,7 @@ class NguoiDungSence : public Sence
 {
 public:
 	NguoiDungSence();
+	virtual void show() = 0;
 	NguoiDungSence(NguoiDung * user);
 	~NguoiDungSence();
 

@@ -6,11 +6,11 @@ Sence::Sence()
 {
 }
 
-bool Sence::IsUserContinue()
+bool Sence::IsUserContinue(const char * msg)
 {
 
 	char cChooice;
-	cout << "Tiep tuc? (Y/N) ";
+	cout << msg <<"(Y/N) ";
 	cin.ignore();
 	cin.clear();
 	cChooice = cin.get();

@@ -117,9 +117,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ChuyenTienSence.h" />
+    <ClInclude Include="DangNhapSence.h" />
     <ClInclude Include="Date.h" />
+    <ClInclude Include="DoiTien.h" />
+    <ClInclude Include="GuiTienSence.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="MenuNguoiDung.h" />
+    <ClInclude Include="MenuQuanTri.h" />
     <ClInclude Include="NganHang.h" />
     <ClInclude Include="Nguoi.h" />
     <ClInclude Include="NguoiDung.h" />
@@ -128,13 +132,18 @@
     <ClInclude Include="QuanTri.h" />
     <ClInclude Include="RutTienSence.h" />
     <ClInclude Include="Sence.h" />
+    <ClInclude Include="TaoNguoiDungSence.h" />
     <ClInclude Include="Tien.h" />
     <ClInclude Include="TimeUtils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DangNhapSence.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DoiTien.cpp" />
+    <ClCompile Include="GuiTienSence.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MenuNguoiDung.cpp" />
+    <ClCompile Include="MenuQuanTri.cpp" />
     <ClCompile Include="NganHang.cpp" />
     <ClCompile Include="Nguoi.cpp" />
     <ClCompile Include="NguoiDung.cpp" />
@@ -142,6 +151,7 @@
     <ClCompile Include="NguoiDungSence.cpp" />
     <ClCompile Include="RutTienSence.cpp" />
     <ClCompile Include="Sence.cpp" />
+    <ClCompile Include="TaoNguoiDungSence.cpp" />
     <ClCompile Include="Tien.cpp" />
     <ClCompile Include="TimeUtils.cpp" />
   </ItemGroup>

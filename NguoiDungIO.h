@@ -10,7 +10,7 @@ public:
 	bool addNguoiDung(NguoiDung * thongTin);
 	bool updateNguoiDung(NguoiDung * thongTin);
 	bool deleteNguoiDung(std::string soTaiKhoan);
-	NguoiDung * checkLogin(std::string soTaiKhoan, std::string matKhau);
+	bool checkLogin(std::string soTaiKhoan, std::string matKhau);
 	~NguoiDungIO();
 
 private:

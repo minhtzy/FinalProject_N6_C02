@@ -1,5 +1,9 @@
 #include "Date.h"
 
+#include <iostream>
+
+using namespace std;
+
 Date::Date() :day(1),month(1),year(1990)
 {
 }
@@ -9,6 +13,21 @@ Date::Date(int day, int month, int year)
 	, month(month)
 	, year(year)
 {
+}
+
+void Date::Input()
+{
+	cout << "Nhap ngay sinh: ";
+	cin >> day;
+	cout << "Nhap thang sinh: ";
+	cin >> month;
+	cout << "Nhap nam sinh: ";
+	cin >> year;
+}
+
+void Date::Output()
+{
+	cout << day << "/" << month << "/" << year;
 }
 
 int Date::getDay()

@@ -20,15 +20,13 @@ Nguoi::Nguoi(char * soCMND, char * hoVaTen, char * diaChi, Date ngaySinh)
 
 void Nguoi::Input()
 {
-	int year, month, day;
 	cout << "Nhap so chung minh nhan dan: ";
 	cin >> soCMND;
 	cout << "Nhap ho va ten: ";
 	cin.ignore();
 	cin.getline(hoVaTen,20);
 	cout << "Nhap ngay thang nam sinh: ";
-	cin >> day >> month >> year;
-	setNgaySinh(day, month, year);
+	ngaySinh.Input();
 	cout << "Nhap dia chi: " << endl;
 	cin.ignore();
 	cin.getline(diaChi,50);

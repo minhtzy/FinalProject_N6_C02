@@ -53,8 +53,8 @@ bool NguoiDungIO::updateNguoiDung(NguoiDung * thongTin)
 		if (temp->getSoTaiKhoan().compare(thongTin->getSoTaiKhoan()) == 0)
 		{
 			file.seekp(posg);
-			file.write((char *)temp, sizeof(NguoiDung));
-			delete temp;
+			file.write((char *)thongTin, sizeof(NguoiDung));
+			//delete temp;
 			return true;
 		}
 		posg = file.tellg();
@@ -70,9 +70,22 @@ bool NguoiDungIO::deleteNguoiDung(std::string soTaiKhoan)
 	return false;
 }
 
-NguoiDung * NguoiDungIO::checkLogin(std::string soTaiKhoan, std::string matKhau)
+bool NguoiDungIO::checkLogin(std::string soTaiKhoan, std::string matKhau)
 {
-	return NULL;
+	ifstream iFile;
+	iFile.open(NGUOI_DUNG_DB_PATH, ios::in | ios::binary);
+
+	NguoiDung * temp = new NguoiDung;
+	iFile.read((char *)(temp), sizeof(NguoiDung));
+	while (!iFile.eof())
+	{
+		if (temp->getSoTaiKhoan().compare(soTaiKhoan) == 0 && temp->getMatKhau().compare(matKhau) == 0)
+		{
+			return true;
+		}
+		iFile.read((char *)(temp), sizeof(NguoiDung));
+	}
+	return false;
 }
 
 NguoiDungIO::~NguoiDungIO()

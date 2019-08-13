@@ -6,8 +6,10 @@ class DoiTien
 {
 public:
 	DoiTien();
-	double getTien(double amount, Tien::MA_TIEN from, Tien::MA_TIEN to);
-	double getTiGia(Tien::MA_TIEN from, Tien::MA_TIEN to);
+	static double doiTien(double amount, Tien::MA_TIEN from, Tien::MA_TIEN to);
+	static double getTiGia(Tien::MA_TIEN from, Tien::MA_TIEN to);
+	static double getPhi(double amount,Tien::MA_TIEN from, Tien::MA_TIEN to);
+	static double getPhiDoi(Tien::MA_TIEN from, Tien::MA_TIEN to);
 	~DoiTien();
 
 private:
