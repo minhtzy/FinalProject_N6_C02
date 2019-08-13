@@ -3,10 +3,8 @@
 
 using namespace std;
 
-Tien::Tien()
+Tien::Tien() : maTien(Tien::VND), soTien(0)
 {
-	soTien = 0;
-	maTien = Tien::VND;
 }
 
 Tien::Tien(double soTien, MA_TIEN maTien): soTien(soTien) , maTien(maTien)

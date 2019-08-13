@@ -1,14 +1,14 @@
 #pragma once
 #include "NguoiDungSence.h"
 
-class RutTienSence : public NguoiDungSence
+class GuiTienSence : public NguoiDungSence
 {
 public:
-	RutTienSence();
-	RutTienSence(NguoiDung * user);
+	GuiTienSence();
+	GuiTienSence(NguoiDung * user);
 	void show() override;
-	bool RutTien(double amount);
-	~RutTienSence();
+	bool GuiTien(double amount, double fee);
+	~GuiTienSence();
 
 private:
 

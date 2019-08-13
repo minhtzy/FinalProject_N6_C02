@@ -5,6 +5,8 @@ class Date
 public:
 	Date();
 	Date(int day, int month, int year);
+	void Input();
+	void Output();
 	int getDay();
 	void setDay(int day);
 	int getMonth();

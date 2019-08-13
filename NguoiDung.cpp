@@ -39,7 +39,7 @@ std::string NguoiDung::getSoTaiKhoan()
 
 void NguoiDung::setSoTaiKhoan(std::string soTK)
 {
-	this->soTaiKhoan = soTK;
+	strcpy(this->soTaiKhoan, soTK.c_str());
 }
 
 std::string NguoiDung::getMatKhau()
@@ -49,7 +49,7 @@ std::string NguoiDung::getMatKhau()
 
 void NguoiDung::setMatKhau(std::string matKhau)
 {
-	this->matKhau = matKhau;
+	strcpy(this->matKhau,matKhau.c_str());
 }
 
 void NguoiDung::setActive(bool active)

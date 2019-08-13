@@ -1,4 +1,4 @@
-#include "RutTienSence.h"
+﻿#include "RutTienSence.h"
 #include <iostream>
 
 #include "NguoiDungIO.h"
@@ -51,7 +51,10 @@ bool RutTienSence::RutTien(double amount)
 		user->setSoDu(user->getSoDu() - amount);
 		NguoiDungIO ndIO;
 		updated = ndIO.updateNguoiDung(user);
-
+		if (!updated) // nếu ko update thành công reset lại số dư
+		{
+			user->setSoDu(user->getSoDu() + amount);
+		}
 		return updated;
 	}
 	return false;
