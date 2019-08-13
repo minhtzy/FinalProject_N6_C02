@@ -1,5 +1,5 @@
 #include "Main.h"
-#include "DangNhapSence.h"
+#include "DangNhapScene.h"
 
 #include <iostream>
 
@@ -7,8 +7,8 @@ using namespace std;
 
 int main(int arg, char ** args)
 {
-	DangNhapSence dnSence;
-	dnSence.show();
+	DangNhapScene dnScene;
+	dnScene.show();
 	//for (int i = 0; i < 2; ++i)
 	//{
 	//	NguoiDung * nd = new NguoiDung();

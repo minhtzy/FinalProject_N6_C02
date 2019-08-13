@@ -1,13 +1,13 @@
 #pragma once
-#include "Sence.h"
+#include "Scene.h"
 
-class DangNhapSence : public Sence
+class DangNhapScene : public Scene
 {
 public:
-	DangNhapSence();
+	DangNhapScene();
 	void show() override;
 	void doNguoiDungDangNhap();
 	void doQuanTriDangNhap();
-	~DangNhapSence();
+	~DangNhapScene();
 
 };

@@ -1,15 +1,15 @@
-#include "TaoNguoiDungSence.h"
+#include "TaoNguoiDungScene.h"
 #include "NguoiDungIO.h"
 
 #include <iostream>
 
 using namespace std;
 
-TaoNguoiDungSence::TaoNguoiDungSence()
+TaoNguoiDungScene::TaoNguoiDungScene()
 {
 }
 
-void TaoNguoiDungSence::show()
+void TaoNguoiDungScene::show()
 {
 	NguoiDungIO ndIO;
 	NguoiDung * nd = new NguoiDung();
@@ -23,6 +23,6 @@ void TaoNguoiDungSence::show()
 	delete nd;
 }
 
-TaoNguoiDungSence::~TaoNguoiDungSence()
+TaoNguoiDungScene::~TaoNguoiDungScene()
 {
 }

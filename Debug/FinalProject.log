@@ -1,11 +1,2 @@
-﻿  Date.cpp
-  Main.cpp
-  MenuNguoiDung.cpp
-  Nguoi.cpp
-  NguoiDung.cpp
-  NguoiDungIO.cpp
-  NguoiDungSence.cpp
-  RutTienSence.cpp
-  TimeUtils.cpp
-  Generating Code...
+﻿  SaoKeNguoiDungScene.cpp
   FinalProject.vcxproj -> C:\Users\minht\Desktop\Trainee\Exercise\FinalProject\Debug\FinalProject.exe

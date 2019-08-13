@@ -1,4 +1,4 @@
-#include "DangNhapSence.h"
+#include "DangNhapScene.h"
 #include "NguoiDungIO.h"
 #include "MenuNguoiDung.h"
 #include "MenuQuanTri.h"
@@ -8,11 +8,11 @@
 
 using namespace std;
 
-DangNhapSence::DangNhapSence()
+DangNhapScene::DangNhapScene()
 {
 }
 
-void DangNhapSence::show()
+void DangNhapScene::show()
 {
 	cout << "Login : " << endl;
 	cout << "\t1. Nguoi dung dang nhap." << endl;
@@ -22,16 +22,17 @@ void DangNhapSence::show()
 	switch (iChoice)
 	{
 	case 1:
-		
+		doNguoiDungDangNhap();
 		break;
 	case 2:
+		doQuanTriDangNhap();
 		break;
 	default:
 		break;
 	}
 }
 
-void DangNhapSence::doNguoiDungDangNhap()
+void DangNhapScene::doNguoiDungDangNhap()
 {
 	string soTaiKhoan, matKhau;
 	do
@@ -54,7 +55,7 @@ void DangNhapSence::doNguoiDungDangNhap()
 
 }
 
-void DangNhapSence::doQuanTriDangNhap()
+void DangNhapScene::doQuanTriDangNhap()
 {
 	string username, password;
 	do
@@ -78,6 +79,6 @@ void DangNhapSence::doQuanTriDangNhap()
 
 }
 
-DangNhapSence::~DangNhapSence()
+DangNhapScene::~DangNhapScene()
 {
 }

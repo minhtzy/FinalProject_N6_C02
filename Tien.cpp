@@ -144,7 +144,7 @@ std::string Tien::getKyHieu()
 	case Tien::GBP:
 		return "£";
 	case Tien::VND:
-		return "d";
+		return "VND";
 	case Tien::CNY:
 		return "¥";
 	case Tien::EUR:

@@ -1,5 +1,5 @@
 #include "MenuQuanTri.h"
-#include "TaoNguoiDungSence.h"
+#include "TaoNguoiDungScene.h"
 
 #include <iostream>
 
@@ -24,7 +24,7 @@ void MenuQuanTri::show()
 		{
 		case 1:
 		{
-			TaoNguoiDungSence taond;
+			TaoNguoiDungScene taond;
 			taond.show();
 			break;
 		}
@@ -33,7 +33,7 @@ void MenuQuanTri::show()
 		default:
 			break;
 		}
-	} while (IsUserContinue());
+	} while (IsUserContinue("Tiep tuc thuc hien chuc nang khac?"));
 
 }
 
