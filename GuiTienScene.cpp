@@ -1,4 +1,4 @@
-﻿#include "GuiTienSence.h"
+﻿#include "GuiTienScene.h"
 #include "NguoiDungIO.h"
 #include "DoiTien.h"
 
@@ -6,15 +6,15 @@
 
 using namespace std;
 
-GuiTienSence::GuiTienSence()
+GuiTienScene::GuiTienScene()
 {
 }
 
-GuiTienSence::GuiTienSence(NguoiDung * user) : NguoiDungSence(user)
+GuiTienScene::GuiTienScene(NguoiDung * user) : NguoiDungScene(user)
 {
 }
 
-void GuiTienSence::show()
+void GuiTienScene::show()
 {
 	if (!user->isActived())
 	{
@@ -44,7 +44,7 @@ void GuiTienSence::show()
 
 }
 
-bool GuiTienSence::GuiTien(double amount, double fee)
+bool GuiTienScene::GuiTien(double amount, double fee)
 {
 	if (amount > 0)
 	{
@@ -62,6 +62,6 @@ bool GuiTienSence::GuiTien(double amount, double fee)
 	return false;
 }
 
-GuiTienSence::~GuiTienSence()
+GuiTienScene::~GuiTienScene()
 {
 }

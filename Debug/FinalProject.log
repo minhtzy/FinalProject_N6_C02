@@ -1,11 +1,13 @@
-﻿  Date.cpp
+﻿  ChuyenTienScene.cpp
+  DangNhapScene.cpp
+  GuiTienScene.cpp
+  KhieuNai.cpp
   Main.cpp
   MenuNguoiDung.cpp
-  Nguoi.cpp
-  NguoiDung.cpp
-  NguoiDungIO.cpp
-  NguoiDungSence.cpp
-  RutTienSence.cpp
-  TimeUtils.cpp
+  MenuQuanTri.cpp
+  NguoiDungScene.cpp
+  RutTienScene.cpp
+  Scene.cpp
+  TaoNguoiDungScene.cpp
   Generating Code...
   FinalProject.vcxproj -> C:\Users\minht\Desktop\Trainee\Exercise\FinalProject\Debug\FinalProject.exe

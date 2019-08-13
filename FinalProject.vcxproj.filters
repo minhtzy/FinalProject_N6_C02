@@ -30,19 +30,7 @@
     <ClInclude Include="NguoiDung.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MenuNguoiDung.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RutTienSence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChuyenTienSence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NguoiDungSence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Main.h">
@@ -60,16 +48,34 @@
     <ClInclude Include="DoiTien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GuiTienSence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DangNhapSence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MenuQuanTri.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TaoNguoiDungSence.h">
+    <ClInclude Include="KhieuNai.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhiChuyenTien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChuyenTienScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DangNhapScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiTienScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NguoiDungScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RutTienScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaoNguoiDungScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -89,13 +95,7 @@
     <ClCompile Include="NguoiDung.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MenuNguoiDung.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RutTienSence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
@@ -104,25 +104,40 @@
     <ClCompile Include="NguoiDungIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NguoiDungSence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Date.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DoiTien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GuiTienSence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DangNhapSence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MenuQuanTri.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TaoNguoiDungSence.cpp">
+    <ClCompile Include="KhieuNai.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhiChuyenTien.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChuyenTienScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DangNhapScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiTienScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NguoiDungScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RutTienScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TaoNguoiDungScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -33,3 +33,7 @@
 
 !/Debug/
 /Debug/*
+*.tlog
+*.pdb
+*.obj
+*.idb

@@ -1,12 +1,12 @@
-#include "Sence.h"
+#include "Scene.h"
 #include <iostream>
 
 using namespace std;
-Sence::Sence()
+Scene::Scene()
 {
 }
 
-bool Sence::IsUserContinue(const char * msg)
+bool Scene::IsUserContinue(const char * msg)
 {
 
 	char cChooice;
@@ -17,7 +17,7 @@ bool Sence::IsUserContinue(const char * msg)
 	return (cChooice == 'Y' || cChooice == 'y');
 }
 
-void Sence::InputChoice(int & iChoice, int iMin, int iMax, const char * msg)
+void Scene::InputChoice(int & iChoice, int iMin, int iMax, const char * msg)
 {
 
 	do
@@ -28,6 +28,6 @@ void Sence::InputChoice(int & iChoice, int iMin, int iMax, const char * msg)
 
 }
 
-Sence::~Sence()
+Scene::~Scene()
 {
 }

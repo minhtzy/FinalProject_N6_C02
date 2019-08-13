@@ -1,4 +1,4 @@
-﻿#include "RutTienSence.h"
+﻿#include "RutTienScene.h"
 #include <iostream>
 
 #include "NguoiDungIO.h"
@@ -6,15 +6,15 @@
 
 using namespace std;
 
-RutTienSence::RutTienSence()
+RutTienScene::RutTienScene()
 {
 }
 
-RutTienSence::RutTienSence(NguoiDung * user) : NguoiDungSence(user)
+RutTienScene::RutTienScene(NguoiDung * user) : NguoiDungScene(user)
 {
 }
 
-void RutTienSence::show()
+void RutTienScene::show()
 {
 
 	if (!user->isActived())
@@ -42,7 +42,7 @@ void RutTienSence::show()
 	} while (!success);
 }
 
-bool RutTienSence::RutTien(double amount)
+bool RutTienScene::RutTien(double amount)
 {
 	if (amount > 0 && amount <= user->getSoDu().getGiaTri())
 	{
@@ -60,6 +60,6 @@ bool RutTienSence::RutTien(double amount)
 	return false;
 }
 
-RutTienSence::~RutTienSence()
+RutTienScene::~RutTienScene()
 {
 }

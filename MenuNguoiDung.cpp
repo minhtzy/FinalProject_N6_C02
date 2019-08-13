@@ -1,9 +1,9 @@
 #include "MenuNguoiDung.h"
 #include <iostream>
 
-#include "RutTienSence.h"
-#include "ChuyenTienSence.h"
-#include "GuiTienSence.h"
+#include "RutTienScene.h"
+#include "ChuyenTienScene.h"
+#include "GuiTienScene.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ MenuNguoiDung::MenuNguoiDung()
 {
 }
 
-MenuNguoiDung::MenuNguoiDung(NguoiDung * user) : NguoiDungSence(user)
+MenuNguoiDung::MenuNguoiDung(NguoiDung * user) : NguoiDungScene(user)
 {
 }
 
@@ -33,14 +33,14 @@ void MenuNguoiDung::show()
 		{
 		case 1:
 		{
-			RutTienSence rutTienSence(user);
-			rutTienSence.show();
+			RutTienScene rutTienScene(user);
+			rutTienScene.show();
 			break;
 		}
 		case 2:
 		{
-			GuiTienSence guiTienSence(user);
-			guiTienSence.show();
+			GuiTienScene guiTienScene(user);
+			guiTienScene.show();
 			break;
 		}
 		case 3:

@@ -1,6 +1,6 @@
 #pragma once
-#include "NguoiDungSence.h"
-class MenuNguoiDung : public NguoiDungSence
+#include "NguoiDungScene.h"
+class MenuNguoiDung : public NguoiDungScene
 {
 
 public:

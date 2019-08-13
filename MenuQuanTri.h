@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Sence.h"
+#include "Scene.h"
 
-class MenuQuanTri : public Sence
+class MenuQuanTri : public Scene
 {
 public:
 	MenuQuanTri();
