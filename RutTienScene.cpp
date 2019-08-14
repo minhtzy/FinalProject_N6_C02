@@ -70,7 +70,7 @@ void RutTienScene::LogRutTien(double amount)
 {
 	time_t now = time(NULL);
 	std::tm * ptm = new tm;
-	localtime_s(ptm, &now);
+	ptm = localtime(&now);
 	char time_buffer[32];
 	//Format: Mo, 15.06.2009 20:20:00
 	std::strftime(time_buffer, 32, "%a, %d.%m.%Y %H:%M:%S", ptm);

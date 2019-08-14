@@ -90,6 +90,30 @@
     <ClInclude Include="XemThongBaoScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="QuanTriIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuanTriScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoiTrangThaiScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThongKeKhieuNaiScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XuLyKhieuNaiScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KhieuNai.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SuaTTNguoiDungScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThongBao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Nguoi.cpp">
@@ -159,6 +183,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="XemThongBaoScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTri.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTriIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTriScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoiTrangThaiScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThongKeKhieuNaiScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XuLyKhieuNaiScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KhieuNai.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SuaTTNguoiDungScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThongBao.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

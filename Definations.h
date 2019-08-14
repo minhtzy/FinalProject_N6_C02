@@ -8,3 +8,4 @@
 #define PHI_CHUYEN_FILE_PATH "phichuyen.dat"
 #define KHIEU_NAI_FILE_PATH "KhieuNai.dat"
 #define THONG_BAO_FILE_PATH "ThongBao.dat"
+#define QUAN_TRI_FILE_PATH "quantri.dat"

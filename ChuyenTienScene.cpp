@@ -87,8 +87,7 @@ bool ChuyenTienScene::ChuyenTien(NguoiDung* user1, double amount,double fee)
 void ChuyenTienScene::LogChuyenTien(NguoiDung * user1, double amount, double fee)
 {
 	time_t now = time(NULL);
-	std::tm * ptm = new tm;
-	localtime_s(ptm, &now);
+	std::tm * ptm = localtime(&now);
 	char time_buffer[32];
 	//Format: Mo, 15.06.2009 20:20:00
 	std::strftime(time_buffer, 32, "%a, %d.%m.%Y %H:%M:%S", ptm);

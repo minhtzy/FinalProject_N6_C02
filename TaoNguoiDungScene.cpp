@@ -9,6 +9,10 @@ TaoNguoiDungScene::TaoNguoiDungScene()
 {
 }
 
+TaoNguoiDungScene::TaoNguoiDungScene(QuanTri * quanTri) : QuanTriScene(quanTri)
+{
+}
+
 void TaoNguoiDungScene::show()
 {
 	NguoiDungIO ndIO;

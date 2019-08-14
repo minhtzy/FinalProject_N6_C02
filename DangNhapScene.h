@@ -8,6 +8,7 @@ public:
 	void show() override;
 	void doNguoiDungDangNhap();
 	void doQuanTriDangNhap();
+	void doAddQuanTri();
 	~DangNhapScene();
 
 };

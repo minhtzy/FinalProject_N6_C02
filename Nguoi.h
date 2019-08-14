@@ -12,11 +12,11 @@ public:
 	virtual void Input();
 	virtual void Output();
 	std::string getSoCMND() ;
-	void setSoCMND( char * soCMND);
+	void setSoCMND(const char * soCMND);
 	std::string getHoTen();
-	void setHoTen( char * hoTen);
+	void setHoTen(const char * hoTen);
 	std::string getDiaChi();
-	void setDiaChi( char * diaChi);
+	void setDiaChi(const char * diaChi);
 	Date getNgaySinh();
 	void setNgaySinh(int day, int month, int year);
 	virtual ~Nguoi();

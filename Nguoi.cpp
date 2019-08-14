@@ -45,7 +45,7 @@ std::string Nguoi::getSoCMND()
 	return soCMND;
 }
 
-void Nguoi::setSoCMND(char * soCMND)
+void Nguoi::setSoCMND(const char * soCMND)
 {
 	strcpy(this->soCMND, soCMND);
 }
@@ -55,7 +55,7 @@ std::string Nguoi::getHoTen()
 	return hoVaTen;
 }
 
-void Nguoi::setHoTen(char * hoTen)
+void Nguoi::setHoTen(const char * hoTen)
 {
 	strcpy(this->hoVaTen, hoTen);
 }
@@ -65,7 +65,7 @@ std::string Nguoi::getDiaChi()
 	return diaChi;
 }
 
-void Nguoi::setDiaChi(char * diaChi)
+void Nguoi::setDiaChi(const char * diaChi)
 {
 	strcpy(this->diaChi, diaChi);
 }

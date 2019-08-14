@@ -68,8 +68,11 @@ void MenuNguoiDung::show()
 		default:
 			break;
 		}
-		if(scene) scene->show();
-		delete scene;
+		if (scene)
+		{
+			scene->show();
+			delete scene;
+		}
 	} while (IsUserContinue("Ban co muon thuc hien chuc nang khac?"));
 }
 

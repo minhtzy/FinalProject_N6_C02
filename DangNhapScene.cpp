@@ -1,5 +1,7 @@
 #include "DangNhapScene.h"
 #include "NguoiDungIO.h"
+#include "QuanTriIO.h"
+
 #include "MenuNguoiDung.h"
 #include "MenuQuanTri.h"
 
@@ -14,22 +16,29 @@ DangNhapScene::DangNhapScene()
 
 void DangNhapScene::show()
 {
-	cout << "Login : " << endl;
-	cout << "\t1. Nguoi dung dang nhap." << endl;
-	cout << "\t2. Quan tri dang nhap." << endl;
-	int iChoice;
-	InputChoice(iChoice, 1, 2);
-	switch (iChoice)
+	do
 	{
-	case 1:
-		doNguoiDungDangNhap();
-		break;
-	case 2:
-		doQuanTriDangNhap();
-		break;
-	default:
-		break;
-	}
+		cout << "====================== Login ========================= " << endl;
+		cout << "\t1. Nguoi dung dang nhap." << endl;
+		cout << "\t2. Quan tri dang nhap." << endl;
+		cout << "\t3. Them tai khoan quan tri." << endl;
+		int iChoice;
+		InputChoice(iChoice, 1, 3);
+		switch (iChoice)
+		{
+		case 1:
+			doNguoiDungDangNhap();
+			break;
+		case 2:
+			doQuanTriDangNhap();
+			break;
+		case 3:
+			doAddQuanTri();
+			break;
+		default:
+			break;
+		}
+	} while (true);
 }
 
 void DangNhapScene::doNguoiDungDangNhap()
@@ -66,17 +75,28 @@ void DangNhapScene::doQuanTriDangNhap()
 		cin >> password;
 
 		// TODO: check login
-		if (true)
+		QuanTriIO qtIO;
+		if (qtIO.checkLogin(username,password))
 		{
-			MenuQuanTri menu;
+			QuanTri * qt = qtIO.getQuanTri(username);
+			MenuQuanTri menu(qt);
 			menu.show();
 			return;
 		}
 	} while (IsUserContinue("Ten nguoi dung hoac mat khau sai. Nhap lai?"));
+}
 
-
-
-
+void DangNhapScene::doAddQuanTri()
+{
+	QuanTri * quanTri = new QuanTri();
+	quanTri->Input();
+	QuanTriIO qtIO;
+	bool added = qtIO.addQuanTri(quanTri);
+	if (added)
+	{
+		cout << "Them quan tri thanh cong." << endl;
+	}
+	delete quanTri;
 }
 
 DangNhapScene::~DangNhapScene()

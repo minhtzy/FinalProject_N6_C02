@@ -1,31 +1,21 @@
 #pragma once
 #include "Nguoi.h"
-using namespace std;
-class DSQuanTri;
+
 class QuanTri : public Nguoi {
 	public:
 		QuanTri();
 		void Input() override;
 		void Output() override;
-		string getUsername();
-		void setUsername(string uname);
-		string getPassword();
-		void setPassword(string pword);
+		std::string getUsername();
+		void setUsername(std::string uname);
+		std::string getPassword();
+		void setPassword(std::string pword);
 		~QuanTri();
-		bool checklogin(string name, string pass);
-		int docfile(ifstream &)
-		friend DSQuanTri;
-		
+		bool checklogin(std::string name, std::string pass);
+		int docfile(std::ifstream &);
 	protected:
-		string username;
-		string password;
-};
-class DSQuanTri{
-	private:
-		int num;
-		QuanTri ds[100];
-	public:
-		void doc();
+		char username[20];
+		char password[20];
 };
 
 

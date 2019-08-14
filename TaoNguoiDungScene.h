@@ -1,10 +1,11 @@
 #pragma once
-#include "Scene.h"
+#include "QuanTriScene.h"
 
-class TaoNguoiDungScene : public Scene
+class TaoNguoiDungScene : public QuanTriScene
 {
 public:
 	TaoNguoiDungScene();
+	TaoNguoiDungScene(QuanTri * quanTri);
 	void show() override;
 	~TaoNguoiDungScene();
 

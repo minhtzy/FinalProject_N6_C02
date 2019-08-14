@@ -1,11 +1,12 @@
 #pragma once
 
-#include "Scene.h"
+#include "QuanTriScene.h"
 
-class MenuQuanTri : public Scene
+class MenuQuanTri : public QuanTriScene
 {
 public:
 	MenuQuanTri();
+	MenuQuanTri(QuanTri * quanTri);
 	void show() override;
 	~MenuQuanTri();
 
