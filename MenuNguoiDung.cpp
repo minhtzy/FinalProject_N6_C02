@@ -22,15 +22,16 @@ void MenuNguoiDung::show()
 {
 	do
 	{
-		cout << "MENU" << endl;
+		cout << "================ MENU ==================" << endl;
 		cout << "\t1. Rut tien." << endl;
 		cout << "\t2. Gui tien vao tai khoan." << endl;
 		cout << "\t3. Chuyen tien." << endl;
 		cout << "\t4. In sao ke." << endl;
 		cout << "\t5. Gui khieu nai." << endl;
 		cout << "\t6. Xem thong bao." << endl;
+		cout << "\t7. Thoat" << endl;
 		int iChoice;
-		InputChoice(iChoice, 1, 6);
+		InputChoice(iChoice, 1, 7);
 		Scene * scene = nullptr;
 		switch (iChoice)
 		{
@@ -64,7 +65,8 @@ void MenuNguoiDung::show()
 			scene = new XemThongBaoScene(user);
 			break;
 		}
-		
+		case 7: 
+			return;
 		default:
 			break;
 		}
@@ -73,7 +75,7 @@ void MenuNguoiDung::show()
 			scene->show();
 			delete scene;
 		}
-	} while (IsUserContinue("Ban co muon thuc hien chuc nang khac?"));
+	} while (true);
 }
 
 MenuNguoiDung::~MenuNguoiDung()

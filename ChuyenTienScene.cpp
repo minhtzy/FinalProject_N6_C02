@@ -34,7 +34,7 @@ void ChuyenTienScene::show() {
 		cin >> soTaiKhoan;
 		user1 = ndIO.getNguoiDung(soTaiKhoan);
 
-	} while (user1 == nullptr && IsUserContinue("So tai khoan bi sai. Nhap lai?"));
+	} while (user1 == nullptr);
 
 	cout << "Nhap so tien can chuyen" << "(" << user->getSoDu().getStringMaTien() << ") : ";
 	cin >> amount;

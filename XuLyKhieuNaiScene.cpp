@@ -24,7 +24,7 @@ void XuLyKhieuNaiScene::show()
 	{
 		cout << setw(5) << left << i + 1 << setw(15) << left << dsKhieuNai[i].getSoTaiKhoan() << setw(25) << left << dsKhieuNai[i].getThoiGian() << dsKhieuNai[i].getNoiDung() << endl;
 	}
-	while (IsUserContinue("Ban co muon xua ly khieu nai. Tiep tuc?"))
+	while (IsUserContinue("Ban co muon xu ly khieu nai. Tiep tuc?"))
 	{
 		SuaTTNguoiDungScene suaTT(quanTri);
 		suaTT.show();

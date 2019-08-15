@@ -18,16 +18,18 @@ MenuQuanTri::MenuQuanTri(QuanTri * quanTri) : QuanTriScene(quanTri)
 
 void MenuQuanTri::show()
 {
+	cout << "=============== Chao mung den voi trang quan tri ================" << endl;
 	do
 	{
-		cout << "=============== Chao mung den voi trang quan tri ================" << endl;
-		cout << "MENU:" << endl;
+		
+		cout << "============= MENU =================:" << endl;
 		cout << "\t1. Tao tai khoan nguoi dung." << endl;
 		cout << "\t2. Active/Inactive tai khoan." << endl;
 		cout << "\t3. Thong ke khieu nai" << endl;
 		cout << "\t4. Xu ly khieu nai" << endl;
+		cout << "\t5. Thoat" << endl;
 		int iChoice;
-		InputChoice(iChoice, 1, 4);
+		InputChoice(iChoice, 1, 5);
 
 		Scene * scene = nullptr;
 		switch (iChoice)
@@ -44,7 +46,10 @@ void MenuQuanTri::show()
 		case 4:
 			scene = new XuLyKhieuNaiScene(quanTri);
 			break;
+		case 5:
+			return;
 		default:
+			
 			break;
 		}
 		if (scene)
@@ -53,7 +58,7 @@ void MenuQuanTri::show()
 			delete scene;
 		}
 		
-	} while (IsUserContinue("Tiep tuc thuc hien chuc nang khac?"));
+	} while (true);
 
 }
 

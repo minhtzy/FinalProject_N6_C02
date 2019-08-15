@@ -22,8 +22,9 @@ void DangNhapScene::show()
 		cout << "\t1. Nguoi dung dang nhap." << endl;
 		cout << "\t2. Quan tri dang nhap." << endl;
 		cout << "\t3. Them tai khoan quan tri." << endl;
+		cout << "\t4. Thoat." << endl;
 		int iChoice;
-		InputChoice(iChoice, 1, 3);
+		InputChoice(iChoice, 1, 4);
 		switch (iChoice)
 		{
 		case 1:
@@ -35,6 +36,8 @@ void DangNhapScene::show()
 		case 3:
 			doAddQuanTri();
 			break;
+		case 4:
+			return;
 		default:
 			break;
 		}
@@ -43,6 +46,7 @@ void DangNhapScene::show()
 
 void DangNhapScene::doNguoiDungDangNhap()
 {
+	cout << "====================== Nguoi dung dang nhap ========================= " << endl;
 	string soTaiKhoan, matKhau;
 	do
 	{
@@ -58,7 +62,7 @@ void DangNhapScene::doNguoiDungDangNhap()
 			MenuNguoiDung menu = MenuNguoiDung(nd);
 			menu.show();
 			delete nd;
-			return;
+			break;
 		}
 	} while (IsUserContinue("So tai khoan hoac mat khau sai. Nhap lai?"));
 
@@ -66,6 +70,7 @@ void DangNhapScene::doNguoiDungDangNhap()
 
 void DangNhapScene::doQuanTriDangNhap()
 {
+	cout << "====================== Quan tri dang nhap ========================= " << endl;
 	string username, password;
 	do
 	{
@@ -81,13 +86,14 @@ void DangNhapScene::doQuanTriDangNhap()
 			QuanTri * qt = qtIO.getQuanTri(username);
 			MenuQuanTri menu(qt);
 			menu.show();
-			return;
+			break;
 		}
 	} while (IsUserContinue("Ten nguoi dung hoac mat khau sai. Nhap lai?"));
 }
 
 void DangNhapScene::doAddQuanTri()
 {
+	cout << "====================== Them tai khoan quan tri ========================= " << endl;
 	QuanTri * quanTri = new QuanTri();
 	quanTri->Input();
 	QuanTriIO qtIO;
@@ -95,6 +101,10 @@ void DangNhapScene::doAddQuanTri()
 	if (added)
 	{
 		cout << "Them quan tri thanh cong." << endl;
+	}
+	else
+	{
+		cout << "Them quan tri khong thanh cong" << endl;
 	}
 	delete quanTri;
 }
