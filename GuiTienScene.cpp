@@ -4,6 +4,7 @@
 #include "FileLoger.h"
 #include "Definations.h"
 
+#include <iomanip>
 #include <iostream>
 #include <ctime>
 
@@ -33,10 +34,15 @@ void GuiTienScene::show()
 	Tien tien;
 	tien.Input();
 	double tienDoi = DoiTien::doiTien(tien.getGiaTri(), tien.getStringMaTien(), user->getSoDu().getStringMaTien());
-	double phiChuyen = DoiTien::getPhi(tien.getGiaTri(), tien.getStringMaTien(),user->getSoDu().getStringMaTien());
-	cout << "Ban muon chuyen " << tienDoi << " (" << user->getSoDu().getStringMaTien() << ") vao tai khoan." << endl;
-	cout << "Phi gui tien " << phiChuyen << endl;
-	if (!IsUserContinue("Xac nhan chuyen tien?")) return;
+	double phiChuyen = DoiTien::getPhi(tienDoi, tien.getStringMaTien(),user->getSoDu().getStringMaTien());
+	cout << "Ti gia : 1 " << tien.getStringMaTien() << " = " << DoiTien::getTiGia(tien.getStringMaTien(), user->getSoDu().getStringMaTien()) << " " << user->getSoDu().getStringMaTien() << endl;
+	cout << "Ban muon chuyen " << setprecision(0) << fixed << tienDoi << " (" << user->getSoDu().getStringMaTien() << ") vao tai khoan." << endl;
+	cout << "Phi gui tien " << setprecision(0) << fixed << phiChuyen << " (" <<user->getSoDu().getStringMaTien() << ")" <<endl;
+	if (!IsUserContinue("Xac nhan chuyen tien?"))
+	{
+		cout << "Huy bo giao dich gui tien." << endl;
+		return;
+	}
 	success = GuiTien(tienDoi,phiChuyen);
 	if (success)
 	{

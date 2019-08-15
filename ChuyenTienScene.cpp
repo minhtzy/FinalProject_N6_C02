@@ -42,9 +42,12 @@ void ChuyenTienScene::show() {
 	double phi = phiChuyen.getPhiChuyenTien(user->getNganHang().getStringMaNH(), user1->getNganHang().getStringMaNH());
 	// xác nhận chuyển tiền
 	cout << "Ban co muon chuyen " << amount << "(" << user->getSoDu().getStringMaTien() << ") toi tai khoan " << user1->getSoTaiKhoan() << endl;
-	cout << "Phi chuyen tien: " << phi << endl;
-	if (!IsUserContinue("Xac nhan chuyen tien?")) return; // nếu không đồng ý chuyển -> kết thúc
-
+	cout << "Phi chuyen tien: " << phi << "(" << user->getSoDu().getStringMaTien() << ")" << endl;
+	if (!IsUserContinue("Xac nhan chuyen tien?"))
+	{
+		cout << "Huy bo giao dich chuyen tien." << endl;
+		return; // nếu không đồng ý chuyển -> kết thúc
+	}
 	success = ChuyenTien(user1, amount,phi);
 	if (success)
 	{

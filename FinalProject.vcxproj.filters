@@ -13,11 +13,38 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{78b6f87b-9d50-42a5-ae90-b4ed0f13f6d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\NguoiDung">
+      <UniqueIdentifier>{ddc5899d-e2ab-4da9-ad1c-d1b4500bc6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\QuanTri">
+      <UniqueIdentifier>{c2b145b3-6872-4941-9883-e89ffc30c33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Acccount">
+      <UniqueIdentifier>{16370088-3908-4b0a-b50a-e0935f5aae2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{37911709-cc76-4daa-9716-5fd471733415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Account">
+      <UniqueIdentifier>{1a9c242e-da9c-4635-80a2-7559d67b08f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{012cefe5-dc00-4287-a59d-8f089a2000ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{e647c0f6-3bf6-4431-ad1f-99f6bbe913c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\NguoiDung">
+      <UniqueIdentifier>{13bbd3f5-33eb-41a8-ba64-06341b68550b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\QuanTri">
+      <UniqueIdentifier>{cea829f0-9754-472d-b756-10cdedf63000}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Nguoi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TimeUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -27,19 +54,7 @@
     <ClInclude Include="Tien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NguoiDung.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuNguoiDung.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QuanTri.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NguoiDungIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Date.h">
@@ -48,77 +63,89 @@
     <ClInclude Include="DoiTien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MenuQuanTri.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PhiChuyenTien.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ChuyenTienScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DangNhapScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GuiTienScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NguoiDungScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RutTienScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TaoNguoiDungScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileLoger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Definations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KhieuNaiScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SaoKeNguoiDungScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="XemThongBaoScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QuanTriIO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QuanTriScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DoiTrangThaiScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ThongKeKhieuNaiScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="XuLyKhieuNaiScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="KhieuNai.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SuaTTNguoiDungScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ThongBao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DangNhapScene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuNguoiDung.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="NguoiDungScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiTienScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="KhieuNaiScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="ChuyenTienScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuQuanTri.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="DoiTrangThaiScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="SaoKeNguoiDungScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="ThongKeKhieuNaiScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="XemThongBaoScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="XuLyKhieuNaiScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="SuaTTNguoiDungScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="TaoNguoiDungScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="Nguoi.h">
+      <Filter>Header Files\Acccount</Filter>
+    </ClInclude>
+    <ClInclude Include="NguoiDung.h">
+      <Filter>Header Files\Acccount</Filter>
+    </ClInclude>
+    <ClInclude Include="QuanTri.h">
+      <Filter>Header Files\Acccount</Filter>
+    </ClInclude>
+    <ClInclude Include="RutTienScene.h">
+      <Filter>Header Files\Scene\NguoiDung</Filter>
+    </ClInclude>
+    <ClInclude Include="QuanTriScene.h">
+      <Filter>Header Files\Scene\QuanTri</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="QuanTriIO.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="NguoiDungIO.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoger.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Nguoi.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TimeUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -128,16 +155,7 @@
     <ClCompile Include="Tien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NguoiDung.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuNguoiDung.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NguoiDungIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Date.cpp">
@@ -146,71 +164,83 @@
     <ClCompile Include="DoiTien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MenuQuanTri.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PhiChuyenTien.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ChuyenTienScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DangNhapScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GuiTienScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NguoiDungScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RutTienScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TaoNguoiDungScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileLoger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="KhieuNaiScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SaoKeNguoiDungScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="XemThongBaoScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuanTri.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuanTriIO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuanTriScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DoiTrangThaiScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ThongKeKhieuNaiScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="XuLyKhieuNaiScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="KhieuNai.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SuaTTNguoiDungScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ThongBao.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nguoi.cpp">
+      <Filter>Source Files\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="NguoiDung.cpp">
+      <Filter>Source Files\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTri.cpp">
+      <Filter>Source Files\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="NguoiDungIO.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTriIO.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoger.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="DangNhapScene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ChuyenTienScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="DoiTrangThaiScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiTienScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuNguoiDung.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="NguoiDungScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuQuanTri.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="KhieuNaiScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanTriScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="RutTienScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="SuaTTNguoiDungScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="SaoKeNguoiDungScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
+    </ClCompile>
+    <ClCompile Include="TaoNguoiDungScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="ThongKeKhieuNaiScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="XuLyKhieuNaiScene.cpp">
+      <Filter>Source Files\Scene\QuanTri</Filter>
+    </ClCompile>
+    <ClCompile Include="XemThongBaoScene.cpp">
+      <Filter>Source Files\Scene\NguoiDung</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

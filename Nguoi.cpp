@@ -25,7 +25,7 @@ void Nguoi::Input()
 	cout << "Nhap ho va ten: ";
 	cin.ignore();
 	cin.getline(hoVaTen,20);
-	cout << "Nhap ngay thang nam sinh: " << endl;
+	//cout << "Nhap ngay thang nam sinh: " << endl;
 	ngaySinh.Input();
 	cout << "Nhap dia chi: " << endl;
 	cin.ignore();

@@ -97,7 +97,7 @@ void Tien::Input()
 		break;
 	}
 
-	cout << "Nhap so tien: ";
+	cout << "Nhap so tien(" << getStringMaTien() << ") :";
 	cin >> soTien;
 }
 
